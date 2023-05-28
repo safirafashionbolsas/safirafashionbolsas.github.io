@@ -390,3 +390,18 @@ a{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1em;
 }
+
+
+#wpImgM5{
+  width: 45px;
+  aspect-ratio: 1/1;
+  background-image: url('./wpColorIcon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#wpTxtM5{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+}
