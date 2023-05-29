@@ -50,6 +50,7 @@ a{
 	margin-right: 6%;
 	font-size: 1.7em;
 	font-family: 'Cardo', serif;
+  color: var(--whiteP-color);
 }
 #topMenu .topMenuLab:hover{
   cursor: pointer
