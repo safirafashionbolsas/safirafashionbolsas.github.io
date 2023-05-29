@@ -6,6 +6,7 @@ html {
 body{
   padding: 0;
   margin: 0;
+  background-color: #e6e0d5;
 }
 @font-face {
     font-family: 'Now';
@@ -123,7 +124,7 @@ body{
 
 .bolsaAddCart{
   padding: 5%;
-  background-color: #000;
+  background-color: #403D39;
   border-radius: 50px;
   border: 0;
   color: #fff;

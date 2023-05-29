@@ -29,7 +29,7 @@
 	position: fixed; 
 	top: 0;
 	height: 100%; 
-	background: #fcedf3;
+	background: #FFFCF2;
 	overflow: hidden;
   overflow-y: auto;
 }
@@ -62,6 +62,17 @@
   /*mix-blend-mode: exclusion;*/
   filter: sepia(256%) saturate(516%) brightness(33%) hue-rotate(608deg);
 }
+#close_mobile{
+	width: 40px;
+  aspect-ratio: 1/1;
+  background-image: url('./closeIcon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+	background-color: transparent;
+  border: none;
+  margin-right: 2%;
+}
 
 .btn_white{
   border-color: #714751;
@@ -89,7 +100,7 @@
   justify-content: flex-end;
 }
 .prodRemv{
-  background-color: #000;
+  background-color: #403D39;
   color: #fff;
   border-radius: 10px;
   padding: 4%;
@@ -111,7 +122,7 @@
 /*Finaliza compra*/
 
 #fimCompra{
-  background-color: #dd1d56;
+  background-color: #403D39;
   color: #fff;
   border-radius: 10px;
   padding: 4%;
@@ -180,7 +191,7 @@
 		}
 		#cart.show_cart div, #cart.show_cart input, 
 		#cart.show_cart_mob div, #cart.show_cart_mob input{
-			animation-duration: 1.5s;
+			animation-duration: 1s;
 			animation-name: show_cart_f;
 			opacity: 100%;
 		}
@@ -204,14 +215,14 @@
 	  }
 	}
 		#cart.hide_cart{
-			animation-duration: 1.5s;
+			animation-duration: 1s;
 			animation-name: hide_cart;
 			width: 0%;
 			padding-left: 0;
 		}
 		#cart.hide_cart div, #cart.hide_cart input, 
 		#cart.hide_cart_mob div, #cart.hide_cart_mob input{
-			animation-duration: 1s;
+			animation-duration: 0.8s;
 			animation-name: hide_cart_f;
 			opacity: 0%;
 		}
