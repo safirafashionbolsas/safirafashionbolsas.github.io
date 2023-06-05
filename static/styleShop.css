@@ -1,0 +1,209 @@
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #e6e0d5;
+}
+@font-face {
+    font-family: 'Now';
+    src: url('Now-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Now-Light';
+    src: url('Now-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+
+#tituloShop{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 800;
+  font-family: 'Now';
+  font-size: 3em;
+  padding: 1% 0 1% 1%;
+}
+
+#heartTitle{
+  height: 40px;
+  aspect-ratio: 1/1;
+  background-image: url('./imgs/heart.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 1%;
+}
+
+
+.bolsaCard{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 50vh;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.product{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40%;
+  height: 90%;
+}
+
+.imgDecoration{
+  padding: 2%;
+  height: 90%;
+  margin: 0 auto;
+}
+.bolsaImg{
+  height: 100%;
+  aspect-ratio: 1/1.5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.contents{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  height: 100%;
+  padding: 0;
+}
+
+.insideContents{
+  height: 60%;
+  text-align: center;
+}
+
+.insideContents div{
+  margin: 8% auto;
+}
+.insideContents button{
+  margin: 8% auto;
+}
+
+.bolsaTitle{
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+}
+
+.bolsaPrice{
+  font-weight: 500;
+  font-family: 'Now';
+  font-size: 2em;
+}
+.bolsaColor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1% auto;
+  height: 5%;
+  width: 80%;
+}
+.bolsaColor div{
+  border-radius: 100%;
+  height: 40px;
+  aspect-ratio: 1/1;
+  margin: 0 1%;
+}
+
+.bolsaAddCart{
+  padding: 5%;
+  background-color: #403D39;
+  border-radius: 50px;
+  border: 0;
+  color: #fff;
+}
+
+.bolsaAddCart:hover{
+  cursor: pointer; 
+  background-color: #0000ffaa;
+}
+
+.bolsaAddCart:active{
+  background-color: #000;
+}
+
+#topShop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btn_cart{
+  height: 40px;
+  aspect-ratio: 1/1;
+  background-image: url('./imgs/cart.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+}
+#Dbtn_cart{
+  position: fixed;
+  bottom: 10px;
+  right: 6px;
+  padding: 0.5%;
+  border-radius: 100%;
+  background-color: #f54254;
+}
+
+#btn_cart:hover{
+  cursor: pointer;
+  /*background-image: url('./cart.png');
+  filter: sepia(256%) saturate(1051%) brightness(63%) hue-rotate(941deg);*/
+}
+
+/*#btn_cart:active{
+  background-image: url('./cartBlack.png');
+}*/
+
+#menuTop{
+  background-image: url('./imgs/menuBlack.png');
+  margin-right: 5px;
+  min-width:40px;
+  min-height:40px;
+  max-width:40px;
+  max-height:40px;
+  width: auto;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#topShopMenu{
+  display: flex;
+  min-width:100px;
+  max-width:100px;
+  padding: 1% 1% 1% 0;
+  justify-content: flex-end;
+}
+
+.ProdSelected{
+  border : 4px solid #4a0429;
+}
+
+.ProdNoSelected{
+  border : 2px solid #000000;
+}
+
+#productsList .bolsaColor div {
+    border: 1px solid #000;
+}
