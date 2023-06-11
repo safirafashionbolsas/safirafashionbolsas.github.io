@@ -107,6 +107,14 @@ body{
   font-family: 'Now';
   font-size: 2em;
 }
+
+.desc{
+  font-weight: 500;
+  font-family: 'Now';
+  font-size: 1.2em;
+}
+
+
 .bolsaColor{
   display: flex;
   justify-content: center;

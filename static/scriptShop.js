@@ -1,35 +1,65 @@
 /*CONFIG COMPRA BOLSA*/
 
-cria_bolsa("Bolsa Lolla", "Lolla.jpeg", "89,99", [["#000","preta"]], "#00000066");
-cria_bolsa("Bolsa Mary", "BolsaMary.jpeg", "89,90", [["#fff","branca"]], "#555566");
-cria_bolsa("Bolsa Chloe", "BolsaChloe.jpeg", "70,99", [["#fff","branca"],["#000","preta"]], "#44444466");
+
+cria_bolsa({
+  nome: "Bolsa Chloe", src: "BolsaChloe.jpeg", preco: "70,99", decoration: "#44444466", 
+  cores: [["#bbb","cinza"],["#000","preta"],["#e6e6fa","lavanda"]]});
+cria_bolsa({
+  nome: "Bolsa Mary", src: "BolsaMary.jpeg", preco: "89,90", decoration: "#555566",
+  cores: [["#fff","branca"],["#000","preta"],["#e6e6fa","lavanda"],["#0268a8","azul"]]});
+
+cria_bolsa({
+  nome: "Bolsa Mayra", src: "BolsaMayra.jpeg", preco: "81,99", decoration: "#44444466", 
+  cores: [["#000","preta"],["#58fcaa","verde"],["#d9d632","amarela"]]});
+
+cria_bolsa({
+  nome: "Carteira Jade M", src: "CarteiraJade.jpeg", preco: "R$39,99", decoration: "#555566",
+ currentColor: 'VariasCores', desc: 'Tamanho M <br>Varias Cores'});
+
+cria_bolsa({
+  nome: "Carteira Jade G", src: "CarteiraJade.jpeg", preco: "R$46,99", decoration: "#555566",
+ currentColor: 'VariasCores', desc: 'Tamanho G <br>Varias Cores'});
+
+cria_bolsa({
+  nome: "Bolsa Lolla", src: "Lolla.jpeg", preco: "89,99", decoration: "#00000066",
+  cores: [["#000","preta"]]});
+
+cria_bolsa({
+  nome: "Bolsa Ana", src: "BolsaAna.jpeg", preco: "R$115,99", decoration: "#555566",
+  cores: [["#fff","branca"],["#000","preta"],["#f5f5dc ","bege"]]});
 
 
 
 
-function cria_bolsa(nome, src, preco, cores, decoration) {
+
+function cria_bolsa(params) {
   let lista_cor = '';
-  for (let x in cores) {
-    //<div class="nome_cor">`+cores[x][1]+`</div>
+  if (params.cores){
+    for (let x in params.cores) {
+    //<div class="nome_cor">`+params.cores[x][1]+`</div>
     lista_cor += `
-      <div style="background-color: `+ cores[x][0] + `" class="listColor color`+ cores[x][0] + ` `+ cores[x][1] + ` ProdNoSelected"></div>
-    `
-  };
+      <div style="background-color: `+ params.cores[x][0] + `" class="listColor color`+ params.cores[x][0] + ` `+ params.cores[x][1] + ` ProdNoSelected"></div>
+      `
+    };
+  }
+  
 
-  $('body').append(`<div id="Bolsa` + nome + `" class="bolsaCard" currentcolor="None">
+  $('body').append(`<div id="Bolsa` + params.nome + `" class="bolsaCard" currentcolor="`+ (params.currentColor ? "#fff "+params.currentColor : 'None') +`">
   <div class="product">
-    <div class="imgDecoration" style="background-color:`+ decoration + `">
-      <div class="bolsaImg"  style="background-image: url('./static/bolsas/`+ src + `');"></div>
+    <div class="imgDecoration" style="background-color:`+ params.decoration + `">
+      <div class="bolsaImg"  style="background-image: url('./static/bolsas/`+ params.src + `');"></div>
     </div>
   </div>
     <div class="contents">
       <div class="insideContents">
-      <div class="bolsaTitle">`+ nome + `</div>
-      <div class="bolsaPrice">`+ preco + `</div>
-      <div class="bolsaColor">
+      <div class="bolsaTitle">`+ params.nome + `</div>
+      <div class="bolsaPrice">`+ params.preco + `</div>
+      `+(params.desc ? `<div class='desc'>`+params.desc+`</div>` : '')+`
+      `+(params.cores ? (`<div class="bolsaColor">
         `+ lista_cor + `
-      </div>
-      <button class="bolsaAddCart" onclick="AddCart(event,'`+ nome + `','` + preco + `','` + src + `','` + decoration + `')">ADICIONAR AO CARRINHO</button>
+      </div>`) : '')+`
+
+      <button class="bolsaAddCart" onclick="AddCart(event,'`+ params.nome + `','` + params.preco + `','` + params.src + `','` + params.decoration + `')">ADICIONAR AO CARRINHO</button>
       </div>
     </div>
   </div>`);
@@ -43,7 +73,8 @@ function AddCart(e,nome, preco, src) {
     window.alert("Selecione uma cor para prosseguir.")
     return;
   }
-  console.log(parent.getAttribute('currentcolor').split(" "))
+  // console.log(parent.getAttribute('currentcolor').split(" "))
+  alert("Produto Adicionado!")
   $('#productsList').append(`<div class="cartProd">
 
    <div class="cartImg" style="background-image: url('./static/bolsas/`+ src + `');"> </div>
