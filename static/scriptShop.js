@@ -10,7 +10,7 @@ cria_bolsa({
 
 cria_bolsa({
   nome: "Bolsa Mayra", src: "BolsaMayra.jpeg", preco: "81,99", decoration: "#44444466", 
-  cores: [["#000","preta"],["#58fcaa","verde"],["#d9d632","amarela"]]});
+  cores: [["#000","preta"],["#309292","verde"],["#edc951","amarela"]]});
 
 cria_bolsa({
   nome: "Carteira Jade M", src: "CarteiraJade.jpeg", preco: "R$39,99", decoration: "#555566",
