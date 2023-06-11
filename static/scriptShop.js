@@ -44,7 +44,7 @@ function cria_bolsa(params) {
   }
   
 
-  $('body').append(`<div id="Bolsa` + params.nome + `" class="bolsaCard" currentcolor="`+ (params.currentColor ? "#fff "+params.currentColor : 'None') +`">
+  $('body').append(`<div id="Bolsa` + params.nome + `" class="`+(params.currentColor ? '' : 'changeColor')+` bolsaCard" currentcolor="`+ (params.currentColor ? "#fff "+params.currentColor : 'None') +`">
   <div class="product">
     <div class="imgDecoration" style="background-color:`+ params.decoration + `">
       <div class="bolsaImg"  style="background-image: url('./static/bolsas/`+ params.src + `');"></div>
@@ -105,7 +105,7 @@ function removeItemCart(e) {
 
 //SELECT COLOR
 $(".listColor").click(function(e){
-  $(".bolsaCard").attr("currentColor","None")
+  $(".changeColor").attr("currentColor","None")
   let parent = e.currentTarget.parentElement.parentElement
   parent = parent.parentElement.parentElement
   let currentColor = e.currentTarget.classList.value.split('color')[1]
