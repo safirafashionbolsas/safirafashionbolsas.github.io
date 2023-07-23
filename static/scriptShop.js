@@ -1,6 +1,24 @@
 /*CONFIG COMPRA BOLSA*/
 
 cria_bolsa({
+  nome: "Bolsa Ana", src: "BolsaAna.jpeg", preco: "R$115,99", decoration: "#555566",
+  cores: [["#fff","branca"],["#000","preta"],["#f5f5dc ","bege"]]});
+
+cria_bolsa({
+  nome: "Bolsa Chloe", src: "BolsaChloe.jpeg", preco: "70,99", decoration: "#44444466", 
+  cores: [["#bbb","cinza"],["#000","preta"],["#e6e6fa","lavanda"]]});
+
+
+cria_bolsa({
+  nome: "Carteira Jade M", src: "CarteiraJade.jpeg", preco: "R$39,99", decoration: "#555566",
+ currentColor: 'VariasCores', desc: 'Tamanho M <br>Varias Cores'});
+
+cria_bolsa({
+  nome: "Carteira Jade G", src: "CarteiraJade.jpeg", preco: "R$46,99", decoration: "#555566",
+ currentColor: 'VariasCores', desc: 'Tamanho G <br>Varias Cores'});
+
+
+cria_bolsa({
   nome: "Bolsa Jennifer", src: "BolsaJennifer.jpeg", preco: "R$102,90", decoration: "#30929266",
   cores: [["#309292","verde"],["#000","preta"]]});
 
@@ -12,9 +30,7 @@ cria_bolsa({
   nome: "Bolsa Lari M", src: "BolsaLari.jpeg", preco: "R$135,90", decoration: "#555566",
   cores: [["#e1d4ce","rosa"],["#000","preta"]]});
 
-cria_bolsa({
-  nome: "Bolsa Chloe", src: "BolsaChloe.jpeg", preco: "70,99", decoration: "#44444466", 
-  cores: [["#bbb","cinza"],["#000","preta"],["#e6e6fa","lavanda"]]});
+
 cria_bolsa({
   nome: "Bolsa Mary", src: "BolsaMary.jpeg", preco: "89,90", decoration: "#555566",
   cores: [["#fff","branca"],["#000","preta"],["#e6e6fa","lavanda"],["#0268a8","azul"]]});
@@ -23,21 +39,11 @@ cria_bolsa({
   nome: "Bolsa Mayra", src: "BolsaMayra.jpeg", preco: "81,99", decoration: "#44444466", 
   cores: [["#000","preta"],["#309292","verde"],["#edc951","amarela"]]});
 
-cria_bolsa({
-  nome: "Carteira Jade M", src: "CarteiraJade.jpeg", preco: "R$39,99", decoration: "#555566",
- currentColor: 'VariasCores', desc: 'Tamanho M <br>Varias Cores'});
-
-cria_bolsa({
-  nome: "Carteira Jade G", src: "CarteiraJade.jpeg", preco: "R$46,99", decoration: "#555566",
- currentColor: 'VariasCores', desc: 'Tamanho G <br>Varias Cores'});
-
 /*cria_bolsa({
   nome: "Bolsa Lolla", src: "Lolla.jpeg", preco: "89,99", decoration: "#00000066",
   cores: [["#000","preta"]]});*/
 
-cria_bolsa({
-  nome: "Bolsa Ana", src: "BolsaAna.jpeg", preco: "R$115,99", decoration: "#555566",
-  cores: [["#fff","branca"],["#000","preta"],["#f5f5dc ","bege"]]});
+
 
 
 
