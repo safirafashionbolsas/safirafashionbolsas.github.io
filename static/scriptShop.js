@@ -5,7 +5,7 @@ cria_bolsa({
   cores: [["#309292","verde"],["#000","preta"]]});
 
 cria_bolsa({
-  nome: "Bolsa Lari P", src: "BolsaLari2.jpeg", preco: "R$125,90", decoration: "#e1d4ce66",
+  nome: "Bolsa Lari P", src: "BolsaLari2.jpeg", preco: "R$125,90", decoration: "#e1d4ce",
   cores: [["#e1d4ce","rosa"],["#000","preta"]]});
 
 cria_bolsa({
