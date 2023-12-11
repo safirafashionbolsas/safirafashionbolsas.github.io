@@ -1,10 +1,5 @@
 /*CONFIG COMPRA BOLSA*/
 
-
-cria_bolsa({
-  nome: "Bolsa Teste", src: "BolsaTeste.png", preco: "R$200,99", decoration: "#555566",
-  cores: [["#fff","branca"],["#000","preta"],["#f54287","rosa"]]});
-
 cria_bolsa({
   nome: "Bolsa Ana", src: "BolsaAna.jpeg", preco: "R$115,99", decoration: "#555566",
   cores: [["#fff","branca"],["#000","preta"],["#f5f5dc ","bege"]]});
